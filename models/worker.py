@@ -14,4 +14,4 @@ class Worker(Base):
     works_since : dt = Column(DateTime, default=func.now())
 
 
-    position_link = relationship("Position", back_populates="worker_link")
+    worker_position_link = relationship("WorkerPosition", back_populates="worker_link")

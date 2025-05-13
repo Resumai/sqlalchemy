@@ -22,6 +22,7 @@ from models.base import Base
 from models.worker import Worker
 from models.company import Company
 from models.position import Position
+from models.worker_position import WorkerPosition
 target_metadata = Base.metadata
 
 # other values from the config, defined by the needs of env.py,

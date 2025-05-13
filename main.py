@@ -1,8 +1,10 @@
 from services.workers_service import get_all_workers, delete_worker_by_id
 from views.cli import print_workers_table, cli_create_worker, cli_update_worker, cli_delete_worker
-from db import create_database
 
-create_database()
+# alembic revision --autogenerate -m "Comment"
+# alembic upgrade head
+# alembic stamp head
+
 
 while True:
     print(f'1. View workers\n'
