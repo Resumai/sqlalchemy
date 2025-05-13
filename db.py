@@ -7,8 +7,8 @@ from models.position import Position
 
 engine = create_engine("mysql://root:slapta@localhost:3306/task_schema")
 
-def create_database():
-    Base.metadata.create_all(engine)
+# def create_database():
+#     Base.metadata.create_all(engine)
 
 
 Session = sessionmaker(bind=engine)
