@@ -15,6 +15,3 @@ class Worker(Base):
 
 
     position_link = relationship("Position", back_populates="worker_link")
-
-    def __repr__(self):
-        return f"<Worker(id={self.id}, name='{self.name}', surname='{self.surname}', birth_date={self.birth_date.date()}, salary={self.salary}, works_since={self.works_since.date()})>"
